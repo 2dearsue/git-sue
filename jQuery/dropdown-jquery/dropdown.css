@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 70vw;
+}
+
+nav {
+  background: PowderBlue;
+  height: 6vw;
+  display: flex;
+}
+
+nav li {
+  width: 25%;
+  padding: 1vw 0;
+  list-style-type: none;
+  font-family: Tahoma;
+  font-size: 2.5vw;
+  color: CadetBlue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+ul {
+  display: none;
+  width: 100%;
+  background-color: PowderBlue;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-size: 2vw;
+  color: white;
+  padding: 1vw 0;
+}

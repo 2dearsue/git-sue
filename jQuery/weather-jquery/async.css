@@ -1,0 +1,44 @@
+body {
+  font-family: verdana;
+  font-size: 1vw;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2vw;
+  /* background-color: turquoise; */
+  color: white;
+  width: 10vw;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  flex-wrap: wrap;
+}
+
+section {
+  border: 1px solid black;
+  padding: 2vw;
+  width: 10vw;
+  background-color: turquoise;
+  margin: 2vw;
+}
+
+p {
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+footer {
+  display: inline-flex;
+  align-items: center;
+}
+
+img {
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+  /* border: 1px solid grey; */
+}

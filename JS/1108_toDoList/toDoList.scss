@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  font-size: 1.5vw;
+  width: 40vw;
+  text-align: center;
+}
+
+form>button {
+  display: block;
+  margin: 2vw auto;
+  font-size: 2vw;
+  background: darkgrey;
+  color: white;
+  border-radius: 0.5vw;
+  padding: 1vw;
+  cursor: pointer;
+}
+
+article {
+  background: turquoise;
+  color: black;
+  font-family: verdana;
+  font-size: 1vw;
+  margin: 1vw auto;
+  padding: 1vw;
+
+  span {
+    background: grey;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw 10vw;
+  grid-gap: 1vw 1vw;
+  grid-template-areas: 'nav nav nav nav'
+                       'aside section section section'
+                       'aside section section section'
+                       'aside nav nav nav';
+}
+
+nav {
+  background: grey;
+  grid-area: nav;
+}
+
+aside {
+  background: pink;
+  grid-area: aside;
+}
+
+section {
+  background: lightgreen;
+  grid-area: section;
+}

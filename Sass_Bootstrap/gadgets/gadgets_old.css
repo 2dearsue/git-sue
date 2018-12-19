@@ -1,0 +1,49 @@
+main {
+  border: 10px solid brown;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main section {
+  border: 3px solid black;
+  padding: 5vw 6vw;
+}
+
+main section:nth-of-type(1) h4 {
+  content: "desktops";
+}
+
+main section:nth-of-type(2) h4 {
+  content: "notebooks";
+}
+
+main section:nth-of-type(3) h4 {
+  content: "smartphones";
+}
+
+main section:nth-of-type(4) h4 {
+  content: "smartwatches";
+}
+
+main section div.image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+main section div.image:nth-of-type(1) {
+  background-image: url(../icons/desktops.png);
+}
+
+main section div.image:nth-of-type(2) {
+  background-image: url(../icons/notebooks.png);
+}
+
+main section div.image:nth-of-type(3) {
+  background-image: url(../icons/smartphones.png);
+}
+
+main section div.image:nth-of-type(4) {
+  background-image: url(../icons/smartwatches.png);
+}

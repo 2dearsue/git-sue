@@ -1,0 +1,60 @@
+body {
+  font-family: verdana;
+  margin: 0;
+}
+
+nav {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1vw; */
+  border: 2px solid turquoise;
+  height: 100%;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  }
+
+nav > li{
+  /* margin: 1vw; */
+  width: 25vw;
+  font-size: 1.5vw; */
+  list-style: none;
+  flex-grow: 1;
+  list-style-type: none;
+  /* padding: 1vw; */
+}
+
+section {
+  /* display: none; */
+  width: 60%;
+  left: 35%;
+  position: absolute;
+  top: 0;
+  /* height: 100%; */
+  margin: 1vw auto;
+  border: 0.1vw solid darkgrey;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+section img {
+  width: 35%;
+  height: 25vw;
+}
+
+nav > li:hover{
+  background: DarkTurquoise;
+  opacity: 0.5;
+  /* border-radius: 0.5vw; */
+  color: white;
+  cursor: pointer;
+}
+
+.active{
+  opacity: 1;
+}
+
+.selected {
+  background: LightCyan;
+}

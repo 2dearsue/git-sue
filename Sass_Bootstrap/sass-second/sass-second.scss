@@ -1,0 +1,69 @@
+h3 {
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 5vw;
+  font-family: monospace;
+  padding: 2vw 1.5vw;
+  margin: 0;
+}
+
+nav {
+  margin: 1.1vw 0;
+  background: deepskyblue;
+  height: 5.4vw;
+  position: sticky;
+  top: 0;
+
+  li {
+    color: white;
+    box-sizing:border-box;
+    text-align: center;
+    list-style-type: none;
+
+    a {
+      color: white;
+      font-size: 1.4vw;
+      text-decoration: none;
+      padding: 1vw 0;
+      transition: color 0.4s linear;
+    }
+  }
+
+  > li {
+    display: inline-block;
+    font-size: 3vw;
+    padding: 1vw 3.04vw;
+    vertical-align: top;
+
+  > ul {
+      padding: 0;
+      display: none;
+
+    a {
+      &:hover {
+        color: red;
+        border-bottom: 1px solid red;
+      }
+    }
+  }
+
+  &:hover {
+    background: black;
+    color: cyan;
+
+    > ul {
+      display: block;
+      }
+    }
+
+  }
+}
+
+main {
+  background-color: cyan;
+  background-image: url(../../images/beach-1280.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}

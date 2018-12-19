@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+h2::selection {
+  background: brown;
+  color: white;
+  }
+
+h2:hover {
+  text-shadow: 5px 5px 10px darkred;
+  transition: text-shadow
+}
+
+section,
+article {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  font-size: .7em;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 0 25px;
+}
+
+
+article {
+  background: cyan;
+}

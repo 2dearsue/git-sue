@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+:root {
+  counter-reset: myNumber;
+}
+
+article::before {
+  counter-increment: myNumber;
+  content: 'box no.' counter(myNumber);
+}
+
+article:nth-child(1){
+  background: Aquamarine;
+}
+article:nth-child(2){
+  background: turquoise;
+}
+article:nth-child(3){
+  background: orange;
+}
+article:nth-child(4){
+  background: pink;
+}
+article:nth-child(5){
+  background: beige;
+}
+
+article:nth-child(6){
+  background: lightgrey;
+}
+
+article:nth-child(7){
+  background: darkgrey;
+}
+
+article:nth-child(8){
+  background: lightgreen;
+  flex-grow: 4;
+}
+
+article:nth-child(9){
+  background: red;
+}
+
+article {
+  text-align: center;
+  width: 8%;
+  padding: 2% 1%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+section {
+  border: 1px solid black;
+  display: flex;
+  height: 35%;
+  width: 50%;
+}

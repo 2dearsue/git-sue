@@ -1,0 +1,41 @@
+main {
+  border: 10px solid brown;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+
+section {
+    border: 3px solid black;
+    padding: 5vw 6vw;
+
+    @each $pos, $text in (1, desktops),
+      (2, notebooks), (3, smartphones),
+      (4, smartwatches) {
+      &:nth-of-type(#{$pos}) {
+        h4 {
+        content: '#{$text}';
+          }
+        }
+
+    }
+
+    div.image {
+      background: {
+        repeat: no-repeat;
+        size: 100% 100%;
+        position: center center;
+      }
+
+      @each $pos, $icon in (1, desktops),
+        (2, notebooks), (3, smartphones),
+        (4, smartwatches) {
+
+          &:nth-of-type(#{$pos}) {
+            background-image: url(../icons/#{$icon}.png);
+          }
+      }
+    }
+}
+
+}

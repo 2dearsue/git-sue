@@ -1,0 +1,39 @@
+body {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3vw;
+  background-color: turquoise;
+  text-align: center;
+}
+
+section {
+  margin: 5vw 20vw;
+  padding: 2vw 10vw;
+  line-height: 2vw;
+}
+
+button {
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  font-size: 1vw;
+}
+
+p {
+  /* display: none; */
+  padding: 1.2vw;
+  border: 1px white solid;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.red {
+  color: Teal;
+}

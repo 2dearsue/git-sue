@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: SaddleBrown;
+  text-align: center;
+  height: 70px;
+}
+
+section {
+  width: 50%;
+  margin: 2vw auto;
+  border: 1px solid Peru;
+  display: none;
+}
+
+button {
+  font-family: 'Verdana';
+  font-size: 2vw;
+  background: Chocolate;
+  color: white;
+  border: 1px solid SaddleBrown;
+  padding: 1vw 1.5vw;
+  width: 50vw;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 20vw;
+  height: auto;
+}
+
+h4 {
+  margin: 3vw 0;
+  font-family: Tahoma;
+  font-size: 3vw;
+  color: SandyBrown;
+}
+
+article {
+  margin: 1.5vw;
+  font-size: 2.2vw;
+  font-family: Tahoma;
+  color: SandyBrown;
+}

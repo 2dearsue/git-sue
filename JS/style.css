@@ -1,0 +1,28 @@
+body {
+  font-size: 3vw;
+  background: lightgreen;
+  font-family: Verdana;
+  height: 1800px;
+}
+
+h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2vw;
+}
+
+button {
+  font-size: 4vw;
+  font-family: Verdana;
+  font-weight: bold;
+  cursor: pointer;
+  /* margin: 1vw auto; */
+}
+
+li {
+  display: none;
+  margin: 2vw;
+  background grey;
+  width: 100vw;
+}

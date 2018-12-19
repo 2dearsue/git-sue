@@ -1,0 +1,109 @@
+body {
+  font-family: verdana;
+  font-size: 1vw;
+}
+
+legend {
+  font-size: 1vw;
+  color: grey;
+  font-style: italic;
+}
+
+input, textarea {
+  margin: 1vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+textarea {
+  width: 45%;
+  height: 8vw;
+  font-size: 1vw;
+  margin-left: 0.5vw;
+  padding: 1vw;
+}
+
+label{
+  text-align: center;
+  font-size: 1.2vw;
+  margin: 1vw auto;
+  padding: 2vw;
+}
+
+p {
+  font-size: 1.2vw;
+  padding: 1vw;
+}
+
+section {
+  text-align: center;
+  width: 50vw;
+  margin: 3vw auto;
+  position: relative;
+  border: 1px solid black;
+}
+
+article {
+  padding: 1vw;
+}
+
+input {
+  font-size: 1.2vw;
+  font-family: tahoma;
+  padding: 1vw;
+  color: grey;
+}
+
+input.block {
+  display: inline-block;
+}
+
+img {
+  width: 50%;
+  height: 25vw;
+  margin-bottom: 1vw;
+}
+
+span {
+  font-size: 1.2vw;
+  position: absolute;
+  right: 0.5vw;
+  top: 0.5vw;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5vw;
+}
+
+li > input {
+    font-size: 1vw;
+  }
+
+span:hover {
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:invalid + p.error {
+  display: block;
+}
+
+p.error {
+  display: none;
+  color: red;
+  margin: 1vw;
+  border: 1px dashed grey;
+}
+
+p.counterMessage {
+  color: grey;
+  font-size: 0.8vw;
+  margin: 0;
+  padding-bottom: 2vw;
+}

@@ -1,0 +1,61 @@
+section {
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+
+img.small {
+    border: 1px solid pink;
+    width: 5vw;
+    height: 5vw;
+  }
+
+img.small:hover {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+div {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button:focus ~ div {
+  height: 200px;
+} */
+
+div > img {
+  height: 0;
+  width: 0;
+  transition: all 0.4s linear;
+}
+
+button:first-of-type:focus ~ div > img:first-of-type {
+  height: 40vw;
+  width: 50vw;
+}
+
+button:nth-of-type(2):focus ~ div > img:nth-of-type(2) {
+  height: 40vw;
+  width: 50vw;
+}
+
+button:nth-of-type(3):focus ~ div > img:nth-of-type(3) {
+  height: 40vw;
+  width: 50vw;
+}
+
+button:nth-of-type(4):focus ~ div > img:nth-of-type(4) {
+  height: 40vw;
+  width: 50vw;
+}
+
+button:last-of-type:focus ~ div > img:last-of-type {
+  height: 40vw;
+  width: 50vw;
+}

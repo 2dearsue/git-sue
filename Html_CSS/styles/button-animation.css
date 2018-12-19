@@ -1,0 +1,46 @@
+button {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 3vw 2vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  font-family: helvetica;
+  font-size: 3.4vw;
+}
+
+span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 1px solid rgba(214, 25, 180, 1);
+  transition: all 0.4s linear;
+}
+
+span.top {
+  top: 0;
+  left: -2px;
+}
+
+button:hover span.top, button:hover span.bottom {
+  width: 100%;
+}
+
+span.left {
+  top: -2px;
+  left: 0;
+}
+
+button:hover span.left, button:hover span.right {
+  height: 100%;
+}
+
+span.right {
+   bottom: -2px;
+   right: 0;
+}
+
+span.bottom {
+  bottom: 0;
+  right: -2px;
+}

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+body main {
+  display: flex;
+  width: 75vw;
+  margin: 5vw auto;
+  padding: 2vw 0;
+  flex-wrap: wrap;
+  border: 2vw solid red;
+}
+
+body main section {
+  width: 18.75vw;
+  border: 0.2vw solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 2.9vw;
+  transition: box-shadow 0.5s;
+}
+
+body main section:hover {
+  box-shadow: 0 0 1vw black;
+}
+
+body main section h4 {
+  text-align: center;
+}
+
+body main section div.image {
+  height: 15vw;
+  background-size: 75% 75%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+body main section span {
+  text-align: center;
+  font-size: 1.5vw;
+  color: red;
+  font-weight: bold;
+}
+
+body main section:nth-of-type(1) h4:before {
+  content: "desktops";
+  font-family: tahoma;
+  font-size: 1.5vw;
+}
+
+body main section:nth-of-type(1) div.image {
+  background-image: url(../../images/gadgets/desktops.png);
+}
+
+body main section:nth-of-type(1) span:before {
+  content: "Only 12 ";
+}
+
+body main section:nth-of-type(2) h4:before {
+  content: "notebooks";
+  font-family: tahoma;
+  font-size: 1.5vw;
+}
+
+body main section:nth-of-type(2) div.image {
+  background-image: url(../../images/gadgets/notebooks.png);
+}
+
+body main section:nth-of-type(2) span:before {
+  content: "Only 18 ";
+}
+
+body main section:nth-of-type(3) h4:before {
+  content: "smartphones";
+  font-family: tahoma;
+  font-size: 1.5vw;
+}
+
+body main section:nth-of-type(3) div.image {
+  background-image: url(../../images/gadgets/smartphones.png);
+}
+
+body main section:nth-of-type(3) span:before {
+  content: "Only 5 ";
+}
+
+body main section:nth-of-type(3) span:after {
+  content: ' Take yours before its too late!';
+}
+
+body main section:nth-of-type(4) h4:before {
+  content: "smartwatches";
+  font-family: tahoma;
+  font-size: 1.5vw;
+}
+
+body main section:nth-of-type(4) div.image {
+  background-image: url(../../images/gadgets/smartwatches.png);
+}
+
+body main section:nth-of-type(4) span:before {
+  content: "Only 23 ";
+}

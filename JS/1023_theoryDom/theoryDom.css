@@ -1,0 +1,21 @@
+p {
+  font-family: verdana;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  padding: 1.5vw 10vw;
+  text-align: center;
+}
+
+.styleParagraph {
+  background: purple;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.styleYellow {
+  background: grey;
+  color: yellow;
+}

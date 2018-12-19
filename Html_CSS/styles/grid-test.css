@@ -1,0 +1,24 @@
+main {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
+  grid-template-areas: 'div1 div1 div3'
+                       'div2 div3 div2'
+                       'div3 div1 div2';
+  }
+
+div.div-1 {
+  background: pink;
+  grid-area: div1;
+}
+
+div.div-2 {
+  background: red;
+  grid-area: div2;
+}
+
+div.div-3 {
+  background: orange;
+  grid-area: div3;
+}

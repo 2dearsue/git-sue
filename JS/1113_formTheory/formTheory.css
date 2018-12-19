@@ -1,0 +1,33 @@
+body {
+  font-family: verdana;
+  margin: 1vw;
+  padding: 0;
+  font-size: 1.2vw;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 0.5vw;
+}
+
+input:focus {
+  border: 1px solid grey;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+p {
+  display: none;
+  color: red;
+}

@@ -1,0 +1,20 @@
+nav {
+  background: deepskyblue;
+
+  li {
+    list-style-type: none;
+    margin-left: 2vw;
+  }
+
+  @for $iterator_num from 1 to 11 {
+    li:nth-of-type(#{$iterator_num}) {
+      font-size: 1vw + $iterator_num;
+      width: $iterator_num*10 + px;
+      background: rgba(48,49,255,$iterator_num / 10);
+
+      &:after {
+        content: '#{$iterator_num}';
+      }
+    }
+  }
+}

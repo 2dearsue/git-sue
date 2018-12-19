@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Theory</title>
+    <link rel="stylesheet" href="formTheory.css">
+</head>
+
+<body>
+
+    <form action="">
+
+      <br><br>
+      <label>Enter your name: </label>
+      <input type="text" min-length="2"><br><br>
+
+      <label>Enter your age: </label>
+      <input type="number" min="18" max="65" step="2" disabled><br><br>
+
+      <label>Enter your date: </label>
+      <input class="minDate" type="date" min="1999-11-11" max="2020-11-11"><br><br>
+
+      <p></p>
+
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+    <script src="formTheory.js"></script>
+</body>
+
+</html>

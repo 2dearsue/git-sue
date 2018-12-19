@@ -1,0 +1,57 @@
+$font-color: #777;
+$bg-green: #0DB87D;
+
+li{
+  font: {
+    color: $font-color !important;
+    size: 1.2vw;
+  }
+  text-transform: uppercase;
+}
+
+li, a, p, h5 {
+  letter-spacing: 0.3vw;
+
+  font: {
+    family: Montserrat, sans-serif;
+  }
+}
+
+a {
+  color: $font-color !important;
+}
+
+.who {
+  height: 80vw;
+  padding-top: 4vw;
+
+  background: {
+    color: $bg-green;
+  }
+}
+
+.what, .where {
+  height: 30vw;
+  padding-top: 4vw;
+}
+
+.card {
+  width: 25%;
+  border: none;
+}
+
+.card-text {
+    letter-spacing: none;
+
+    font: {
+      // color: $font-color !important;
+      size: 1.2vw;
+    }
+}
+
+.where {
+  font: {
+    color: $font-color !important;
+    size: 1.2vw;
+  }
+}

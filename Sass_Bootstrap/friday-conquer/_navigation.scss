@@ -1,0 +1,35 @@
+nav {
+  background: $darkGrey;
+  display: flex;
+  position:fixed;
+  top:0;
+  width: 100%;
+
+  div {
+    width: 25%;
+  }
+
+  li {
+    width: 25%;
+    border: 0.1vw solid lightgrey;
+    margin: 2vw;
+    padding: 1vw;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+
+    font: {
+      family: $general2;
+      size: $font-base;
+    }
+
+    &:hover{
+      cursor: pointer;
+      background: {
+        color: darken($darkGrey, 10%)
+      }
+    }
+
+
+  }
+}

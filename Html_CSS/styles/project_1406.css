@@ -1,0 +1,77 @@
+section {
+  border: 1px solid darkgrey;
+  display: flex;
+  width: 90vw;
+  margin: 3vw auto;
+}
+
+div {
+  height: 38vw;
+}
+
+a {
+  flex-basis: 20%;
+  flex-grow: 1;
+  text-decoration: none;
+  font-family:'Abril Fatface', cursive;
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+a:hover {
+  flex-basis: 30%;
+}
+
+section a div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section a div span {
+  opacity: 1;
+  position: relative;
+  top: 10%;
+}
+
+section a div span:nth-of-type(2) {
+  top: -4.3%;
+  opacity: 0;
+}
+
+div:hover>span {
+  position: relative;
+  transition: all 2s ease;
+}
+
+div:hover>span:nth-of-type(1) {
+  top: -3%;
+}
+
+div:hover>span:nth-of-type(2) {
+  top: 3%;
+  opacity: 1;
+}
+
+section div {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.rio {
+  background-image: url(../images/rio-1280.jpg);
+}
+
+.beach {
+  background-image: url(../images/beach-1280.jpg);
+}
+
+.atlantic {
+  background-image: url(../images/atlantic-1280.jpg);
+}
+
+.bird {
+  background-image: url(../images/bird-1280.jpg);
+}

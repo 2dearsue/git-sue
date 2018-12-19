@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: lightgrey;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+li {
+  flex-direction: column;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 1.5vw;
+  background: turquoise;
+  color: white;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+  border: black;
+  padding: 0.5vw 1vw;
+}
+
+ul > li {
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 1vw;
+  text-align: left;
+}
+
+span {
+  font-size: 0.8vw;
+}
+
+img {
+  height: 25%;
+  width: 35%;
+}
+
+section {
+  /* display: flex; */
+  border: 1px solid white;
+  width: 40vw;
+  margin: 4vw auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: Verdana;
+  font-size: 2vw;
+}
+
+article {
+  font-family: Verdana;
+  font-size: 1vw;
+  margin: 1vw 0;
+}

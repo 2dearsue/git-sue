@@ -1,0 +1,15 @@
+body {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  display: block;
+  margin: 1vw;
+}

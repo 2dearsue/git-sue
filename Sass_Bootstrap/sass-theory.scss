@@ -1,0 +1,78 @@
+
+@import 'colors';
+@import 'fonts';
+
+$green_bg: green;
+$puma: puma;
+$pink_col_for_text: pink;
+$html_element: h4;
+
+#{$html_element} {
+  color:red;
+}
+
+.#{$puma} {
+  background: $green_bg;
+  color: $pink_col_for_text;
+}
+
+body {
+  $ratio: 16/25; //25/16
+  $width: 85vw;
+
+  width: $width;
+  height: $width*$ratio; //$width/$ratio
+}
+
+
+div {
+  &:first-of-type{
+    font-family: $big_4;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    background-color: $violet;
+    $width: 80vw;
+    width: $width;
+    height: 0.2 * $width;
+  }
+
+  &:last-of-type{
+    font-family: $big_2;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    background-color: $cyan;
+    $height: 12vw;
+    height: $height;
+    width: 6.5 * $height;
+  }
+
+}
+
+h2:first-of-type {
+  color: $orange;
+  font-family: $general;
+  font-size: $font-base * 5;
+}
+
+h2:nth-of-type(2){
+  color: $blue;
+  font-family: $big;
+  font-size: $font-base * 2;
+}
+
+h2:nth-of-type(3){
+  color: $cyan;
+  font-family: $big;
+}
+
+h2:nth-of-type(4){
+  color: $yellow;
+  font-family: $big;
+}
+
+h2:last-of-type {
+  color: $violet;
+  font-family: $cursive;
+}

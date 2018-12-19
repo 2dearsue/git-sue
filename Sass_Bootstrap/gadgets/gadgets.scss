@@ -1,0 +1,68 @@
+main {
+  border: 10px solid brown;
+  display: flex;
+  justify-content: space-around;
+  margin: 5vw auto;
+  padding: 2vw 0;
+  flex-wrap: wrap;
+
+  section {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+
+    h4 {
+      text-align: center;
+    }
+    div.image {
+      height: 15vw;
+      background: {
+        size: 75% 75%;
+        position: center center;
+        repeat: no-repeat;
+      }
+    }
+    span {
+      text-align: center;
+      font-size: 1.5vw;
+      color: red;
+      font-weight: bold;
+    }
+
+    @each $pos, $text, $quantity in
+      (1, desktops, 12),
+      (2, notebooks, 18), (3, smartphones, 5),
+      (4, smartwatches, 23) {
+
+    &:nth-of-type(#{$pos}) {
+        h4 {
+          &:before {
+            content: '#{$text}';
+            font: {
+              family: tahoma;
+              size: 1.5vw;
+            }
+          }
+        }
+
+        div.image {
+          background-image: url(../icons/#{$text}.png);
+        }
+
+        span {
+          &:before {
+            content: 'Only #{$quantity} ';
+          }
+
+          @if $quantity < 10 {
+            &:after {
+              content: 'Take yours before it is too late!';
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+body {
+ font-family: verdana;
+ color: grey;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  padding: 1vw 1vw;
+  background: lightgrey;
+  width: 50%;
+  margin: 0;
+}
+
+li > p {
+  position: absolute;
+  left: 0;
+  visibility: none;
+  opacity: 0;
+}
+
+ul > li > a {
+  font-family: verdana;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkgray;
+  border-radius: 3%;
+  padding: 1vw;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+ul > li > a:hover {
+  border-color: transparent;
+  background: turquoise;
+  color: white;
+  border-radius: 0.5vw;
+      }
+
+ul {
+  list-style: none;
+  padding: 0;
+  }
+
+ul > li {
+    display: inline-flex;
+  }
+
+#nav .active a {
+  color: turquoise;
+  border: 1px solid turquoise;
+  border-radius: 0.5vw;
+}
+
+#nav .active a:hover {
+    border-color: transparent;
+    background: turquoise;
+    color: white;
+    border-radius: 0.5vw;
+  }
+
+#content p {
+  visibility: visible;
+  opacity: 1;
+}
+
+#content .active p {
+  visibility: visible;
+  opacity: 1;
+}

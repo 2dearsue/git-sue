@@ -1,0 +1,14 @@
+ div {
+  $width: 80vw;
+  $height: 12vw;
+
+  &:first-of-type {
+    width: $width;
+    height: $width*(20/100);
+  }
+
+  &:last-of-type {
+    height: $height;
+    width:6.5 * $height;
+  }
+}

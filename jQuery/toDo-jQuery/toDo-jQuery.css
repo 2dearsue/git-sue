@@ -1,0 +1,66 @@
+input {
+  margin: 5vw;
+  width: 45vw;
+  font-size: 3.2vw;
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+button {
+  background: DarkTurquoise;
+  color: white;
+  border: none;
+  font-family: tahoma;
+  font-size: 2.5vw;
+  padding: 2vw;
+}
+
+form button {
+  background: Turquoise;
+}
+
+button:hover {
+  cursor: pointer;
+  background: CadetBlue;
+  color: PowderBlue;
+}
+
+form button:hover {
+  color: CadetBlue;
+  color: PowderBlue;
+}
+
+form {
+  margin-bottom: 2vw;
+}
+
+button:focus {
+  outline: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section li {
+  display: flex;
+  list-style-type: none;
+  background: deepskyblue;
+  font-family: helvetica;
+  font-size: 3.5vw;
+  overflow: hidden;
+  margin-bottom: 1vw;
+  justify-content: space-between;
+}
+
+section li button {
+  float: right;
+}
+
+section li span {
+  align-self: center;
+}

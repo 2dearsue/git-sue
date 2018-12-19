@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes moveTheCircle {
+  0% {position: relative; top: 0; left: 0;}
+  25% {position: relative; top: 0; left: 200px;}
+  50% {position: relative; top: 200px; left: 200px;}
+  75% {position: relative; top: 200px; left: 0;}
+  100% {position: relative; top: 0; left: 0;}
+}
+
+section {
+  background: red;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin-top: 10vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: moveTheCircle 5s ease-in-out;
+  animation-iteration-count: infinite;
+}

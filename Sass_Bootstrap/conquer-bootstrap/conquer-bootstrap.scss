@@ -1,0 +1,123 @@
+.marg {
+  margin: 0 1vw;
+}
+
+.pad {
+  padding: 1.5vw 0;
+}
+
+.forest {
+  $total_height: 45vw;
+
+  background: {
+    size: 100% 100%;
+    image: url(images2/forest.jpg);
+    repeat: no-repeat;
+  }
+
+  height: $total_height;
+
+  .take_height {
+    height: $total_height;
+    background: transparent;
+  }
+
+  h3, p {
+    margin: 1.5vw 0;
+    text: {
+      shadow: 0.3vw 0.2vw rgba(0, 0, 0, 0.7);
+      }
+    }
+
+  h2 {
+    font-size: 6.5vw;
+  }
+
+  p{
+    font-size: 3.5vw;
+  }
+}
+
+.card {
+  img {
+    height: 24vw;
+
+    @media screen and (max-width: 990px) {
+      height: 30vw;
+      width: 80%;
+    }
+  }
+}
+
+.lifeguard {
+
+  background: {
+    size: 100% 100%;
+    image: url(images2/lifeguard.jpg);
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+
+  h4 {
+    text: {
+      shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.bg-darky {
+  background: {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+footer {
+  margin-top: 2vw;
+  height: 50vw;
+
+  @media screen and  (max-width: 768px) {
+    height: 140vw;
+  }
+
+  background: {
+    image: url(images2/canyon.jpg);
+    size: 100% 100%;
+    attachment: fixed;
+  }
+
+  h3 {
+    text: {
+      shadow: 0.2vw 0.2vw black;
+    }
+  }
+
+  p {
+    font: {
+      size: 3vw;
+      family: tahoma;
+    }
+    background: rgba(0,0,0,0.5)
+  }
+
+  @media screen and (max-width: 768px){
+    p {
+      font: {
+        size: 3vw;
+      }
+    }
+
+    h3 {
+      font: {
+        size: 6vw;
+      }
+    }
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.6) !important;
+
+  &::placeholder {
+    color: black !important;
+  }
+}
+}

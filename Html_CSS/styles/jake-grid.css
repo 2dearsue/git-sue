@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  border: 1px solid black;
+  display: grid;
+  grid: repeat(10, 5vw) / repeat(5, 1fr);
+  grid-gap: 2vw 1vw;
+  grid-template-areas: 'header header header header header'
+                       'header header header header header'
+                       'header header header header header'
+                       'nav nav nav nav nav'
+                       'aside section section section firstDiv'
+                       'aside section section section firstDiv'
+                       'aside section section section secondDiv'
+                       'aside article article paragraph paragraph'
+                       'footer footer footer footer footer'
+                       'footer footer footer footer footer';
+}
+
+header {
+  background: black;
+  grid-area: header;
+}
+
+nav {
+  background: deepskyblue;
+  grid-area: nav;
+}
+
+aside {
+  background: green;
+  grid-area: aside;
+}
+
+section {
+  background: yellow;
+  grid-area: section;
+}
+
+div#first {
+  background: rebeccapurple;
+  grid-area: firstDiv;
+}
+
+div#second {
+  background: blue;
+  grid-area: secondDiv;
+}
+
+article {
+  background: brown;
+  grid-area: article;
+}
+
+p {
+  background: pink;
+  grid-area: paragraph;
+}
+
+footer {
+  background: orange;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-areas: 'header header header header header'
+                         'header header header header header'
+                         'nav nav nav nav nav'
+                         'aside section section section section'
+                         'aside section section section section'
+                         'aside section section section section'
+                         'aside firstDiv firstDiv secondDiv secondDiv'
+                         'article article article paragraph paragraph'
+                         'footer footer footer footer footer'
+                         'footer footer footer footer footer';
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    grid: repeat(12, 10vw) / repeat(5, 20vw);
+    grid-template-areas: 'header header header header header'
+                         'header header header header header'
+                         'nav nav nav nav nav'
+                         'aside aside aside aside aside'
+                         'section section section section section'
+                         'section section section section section'
+                         'firstDiv firstDiv firstDiv firstDiv firstDiv'
+                         'secondDiv secondDiv secondDiv secondDiv secondDiv'
+                         'article article article article article'
+                         'paragraph paragraph paragraph paragraph paragraph'
+                         'footer footer footer footer footer'
+                         'footer footer footer footer footer';
+  }
+}

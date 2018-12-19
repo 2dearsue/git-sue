@@ -1,0 +1,56 @@
+body {
+  font-family: verdana;
+}
+
+div {
+  display: flex;
+}
+
+nav {
+  margin-top: 10vw;
+  border: 2px solid turquoise;
+  height: 100%;
+  }
+
+nav > li{
+  margin:2vw 1vw;
+  width: 15vw;
+  font-size: 1.5vw;
+  list-style: none;
+  padding: 1vw;
+}
+div > div {
+  display: block;
+}
+
+section {
+  display: none;
+  width: 70%;
+  height: 100%;
+  margin: 1vw auto;
+  border: 0.1vw solid darkgrey;
+  text-align: center;
+}
+
+section>p{
+  font-size: 1.5vw;
+}
+
+section img {
+  width: 30vw;
+  height: 40vw;
+}
+nav > li:hover{
+  background: turquoise;
+  opacity: 0.5;
+  border-radius: 0.5vw;
+  color: white;
+}
+.active{
+  display: block;
+}
+.selected {
+  background: lightgrey;
+  padding: 1vw;
+  border-radius: 0.5vw;
+}

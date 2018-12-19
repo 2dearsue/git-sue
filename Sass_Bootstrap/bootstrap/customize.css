@@ -1,0 +1,11 @@
+.example {
+  font-size: 1.5vw;
+  background: red;
+  color: white;
+  border: 1px solid black;
+}
+
+.text {
+  font-size: 1 vw;
+  color: black;
+}

@@ -1,0 +1,49 @@
+body{
+  background: deepskyblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  background: darkblue;
+  color: white;
+  font-family: helvetica;
+  font-size: 2vw;
+  font-weight: 3vw;
+  width: 30%; 
+}
+
+article::first-letter {
+  font-weight: 700;
+  background: black;
+  color: darkblue;
+  font-size: 10vw;
+}
+
+span.decor {
+  text-decoration: overline;
+}
+
+code {
+  display: inline-block;
+  width: 60%;
+  background: grey;
+  color: yellow;
+  border: 2px solid red;
+  padding-top: 25px;
+}
+
+.fn {
+  color: blue;
+}
+
+.link {
+  color: green;
+}
+
+.comment {
+  color: violet;
+}

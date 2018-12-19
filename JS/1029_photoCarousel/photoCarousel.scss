@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-size: 6vw;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  color:black;
+ 
+  &:hover {
+    color: lighten(black, 60%);
+    font-size: 8vw;
+  }
+
+  &:nth-of-type(1) {
+    transform: scaleX(-1);
+    left: 10vw;
+  }
+
+  &:nth-of-type(2) {
+    right: 10vw;
+  }
+
+}
+
+section {
+  border: 1px solid black;
+  margin: 2vw auto;
+  width: 30vw;
+
+  div {
+    display: none;
+    background-size: 100% 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    height: 40vw;
+    // width: 60vw;
+
+    &:nth-of-type(1) {
+      background-image:url(../img/godfather.jpg);
+    }
+
+    &:nth-of-type(2) {
+      background-image:url(../img/onceuponatime.jpg);
+    }
+
+    &:nth-of-type(3) {
+      background-image:url(../img/theuntouchables.jpg);
+    }
+
+    &:nth-of-type(4) {
+      background-image:url(../img/donniebrasco.jpg);
+    }
+
+  }
+
+}
+
+// .flex {
+//   display: inline-flex;
+//   align-items: center;
+// }
+
+.visible {
+  display: flex;
+}

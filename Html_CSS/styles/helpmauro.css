@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  border: 1px solid black;
+}
+
+section > article {
+  height: 100px;
+  flex-basis: 25%;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  section > article {
+    flex-basis: 50%;
+  }
+
+  section {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  section > article {
+    flex-basis: 100%;
+  }
+
+  section {
+    flex-wrap: wrap;
+  }
+}
+
+
+article:nth-of-type(1) {
+  background: brown;
+}
+
+article:nth-of-type(2) {
+  background: cyan;
+}
+
+article:nth-of-type(3) {
+  background: violet;
+}
+
+article:nth-of-type(4) {
+  background: darkgreen;
+}

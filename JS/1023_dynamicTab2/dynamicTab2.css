@@ -1,0 +1,55 @@
+body {
+ font-family: verdana;
+ color: grey;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  }
+
+ul > li {
+    display: inline-flex;
+  }
+
+ul > li > a {
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border: 1px solid transparent;
+          }
+
+ul > li > a:hover {
+  border-color: transparent;
+  background: turquoise;
+  color: white;
+  border-radius: 0.5vw;
+      }
+
+
+.nav .active a {
+  color: turquoise;
+  border: 1px solid turquoise;
+  border-radius: 0.5vw;
+}
+
+.nav .active a:hover {
+  border-color: transparent;
+  background: turquoise;
+  color: white;
+  border-radius: 0.5vw;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}

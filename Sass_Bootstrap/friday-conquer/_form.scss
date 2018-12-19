@@ -1,0 +1,69 @@
+section.form {
+
+  width: 100%;
+  height: 90vw;
+
+  color: white;
+
+  display: grid;
+  grid-template-areas: repeat(12, 1fr) / repeat (12, 1fr);
+  grid-gap: 10px;
+  // grid-template-areas: repeat(8, 1fr) / repeat(8, 5vw);
+
+  h3 {
+    grid-area: 8 / 4 / 2 / 6;
+    text-align: center;
+    color: $darkGrey;
+    margin: 0;
+    // margin-top: 1vw;
+
+    font: {
+      family: $big4;
+      size: 5vw;
+    }
+  }
+
+  h4 {
+    grid-area: 3 / 2 / 3 / 8;
+    text-align: center;
+    color: inherit;
+    box-shadow: 1px white;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 3vw;
+
+    font: {
+      family: $general3;
+      size: 1.5vw;
+    }
+  }
+
+  input {
+    &:first-of-type {
+      grid-area: 4 / 1 / 5 / 5;
+    }
+
+    &:nth-of-type(2) {
+      grid-area: 5 / 1 / 6 / 5;
+    }
+
+    &:last-of-type {
+      grid-area: 6 / 1 / 7 / 5;
+    }
+  }
+
+  textarea {
+    grid-area: 4 / 5 / 7 / 11;
+  }
+
+  button {
+        grid-area: 7 / 5 / 8 / 11;
+  }
+
+  background: {
+    size: 100% 100%;
+    image: url(images/lifeguard.jpg);
+    attachment: fixed;
+  }
+
+}

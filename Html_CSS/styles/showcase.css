@@ -1,0 +1,13 @@
+body, nav, li, a, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: linear-gradient(to bottom, aquamarine, orange);
+}
+
+nav>li {
+  list-style-type: none;
+}

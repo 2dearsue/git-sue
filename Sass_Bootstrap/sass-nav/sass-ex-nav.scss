@@ -1,0 +1,44 @@
+
+
+$general-font: 'Titillium Web', sans-serif;
+$big-font:'Anton', sans-serif;
+$cursive-font: 'Lobster', cursive;
+
+
+body {
+  background-color: lightgrey;
+}
+
+nav {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    font-size: 1.5vw;
+  }
+
+  li {
+    list-style-type: none;
+    flex-grow: 1;
+    background-color: cyan;
+    text-align: center;
+    border: 1px solid white;
+    color: darkgrey;
+    padding: 1vw;
+
+    &:nth-of-type(even) {
+      font-family: $general-font;
+    }
+
+    &:hover{
+      color: darken(darkgrey, 50%);
+      cursor: pointer;
+      }
+
+    font: {
+      size: 3vw;
+      family: $cursive-font;
+
+    }
+  }
+}

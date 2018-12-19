@@ -1,0 +1,28 @@
+section, div, p{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  border: 1px solid black ;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  height: 15vw;
+}
+
+section>*{
+    flex-basis: 15vw;
+    background: deepskyblue;
+    /* height: 20vw; */
+}
+
+section>div:nth-of-type(odd) {
+    background: greenyellow;
+}
+
+section>:not(div) {
+    background: brown;
+    flex-shrink: 0;
+    }

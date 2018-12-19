@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+:root {
+  --darker-red: #E82C0C;
+  --lighter-red: #FF530D;
+}
+
+div {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px   auto;
+}
+
+/* div:hover {
+  background: var(--darker-red);
+} */
+
+div.div-1 {
+  background: linear-gradient(to left, pink, white);
+}
+
+div.div-2 {
+  background-image: url(../images/alone-boy-covered-1126621.jpg);
+}

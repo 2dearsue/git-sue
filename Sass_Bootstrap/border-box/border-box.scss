@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+
+  main {
+    $main-section_width: 50vw;
+    display: flex;
+    width: 50vw;
+    margin: 5vw auto;
+    border: 1px solid black;
+    flex-wrap: wrap;
+
+    div {
+      width: $main_section_width  / 3;
+      height: 10vw;
+      background: red;
+      border: 1px solid blue;
+      padding: 0 2vw;
+      box-sizing: border-box;
+    }
+  }
+}
