@@ -1,4 +1,4 @@
-export const addition = (a, b) => {
+const operation = (a, b) => {
   if (typeof a !== `number` || typeof b !== `number`) {
     return 'Sorry the operation is not possible!'
   } else if (a < 0) {
@@ -8,9 +8,8 @@ export const addition = (a, b) => {
   return a + b;
 }
 
-
-
-export const fizzBuzz = num => {
+// fizzBuzz:
+const fizzBuzz = num => {
   if (typeof num !== `number`) {
     return `The argument provided is not a number.`;
 
@@ -30,3 +29,27 @@ export const fizzBuzz = num => {
     return num;
   }
 };
+
+// factorial:
+
+const factorialNum = (num) => {
+
+  if (typeof num !== `number`) {
+    return `It is not a number`;
+
+  } else if(num < 0) {
+    return `Can't calculate factorial of a negative number`;
+
+  } else if(num == 0) {
+    return `The number is 0 the factorial 1`;
+
+  } else {
+    for (let i = 1; i <= num; i++) {
+      num = num * i;
+    }
+    return num;
+  }
+};
+
+
+/// TDD = Test Driven Developement;
